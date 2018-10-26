@@ -1,8 +1,95 @@
+
+/* REGLES GENERALES */
+
 .case{
     text-align: justify;
 }
 
-.pouet{
-    background-color: bisque;
-    padding: 20px;
-    margin-top: 30px;
+
+p,a, h1{
+	color: white;
+}
+
+
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+
+/* CSS HEADER */
+
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
+background-color: transparent;
+color: white;
+font-size: 1.5em;
+margin-top: 10px;
+}
+
+
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+
+/* CSS ECRAN 01 - ACCROCHE - TITRE DU PROJET + VISUEL APPLICATION */
+
+.ecran01 {
+background-image: linear-gradient(to right top, #73ced6, #55dcc4, #70e59a, #abe762, #f2df20);
+background-image: linear-gradient(to right top, #e800ff, #ff00a6, #ff4d56, #ffa001, #ebd812);
+height: 100vh;
+}
+
+.fondimage{
+animation: fadeInUp 2.5s linear;
+background-image: url("../images/mockup-ecran01-bis.png");
+background-repeat: no-repeat;
+height: 100vh;
+background-position: right 165% bottom;
+}
+
+
+.lisibilite{
+	background-color: rgba(0,0,0,0.15);
+	height: 100vh;
+}
+
+
+
+/* KEYFRAMES ANIMATIONS */
+@keyframes fadeInUp{ /* fadeIn */
+	from { opacity:0; }
+	to { opacity:1; }
+}
+
+
+
+
+.titre {
+	height: 100vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+
+
+}
+
+
+.titrage {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+
+}
+
+
+
+h1 {
+	font-size: 5em;
+	color: white;
+}
+
+
