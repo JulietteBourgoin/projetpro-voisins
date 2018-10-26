@@ -7,11 +7,6 @@
 }
 
 
-p,a, h1{
-	color: white;
-}
-
-
 /* -------------------------------------------- */
 /* -------------------------------------------- */
 /* -------------------------------------------- */
@@ -94,7 +89,6 @@ h1 {
 }
 
 
-=======
 /* Partie étapes */
 .text_etapes{
     padding-top: 10px;
@@ -119,6 +113,7 @@ h1 {
 .membres:hover{
     background-color: black 0.2%;
 }
+
 
 /* Hover content */
 .hover_content {
@@ -188,4 +183,4 @@ h1 {
         align-items: center;
     }
 }
->>>>>>> 0f62685cb880dc39ee5e36031e3dd1a0baaf8d66
+
