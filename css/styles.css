@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .case{
     text-align: justify;
 }
@@ -6,4 +7,19 @@
     background-color: bisque;
     padding: 20px;
     margin-top: 30px;
+=======
+
+/* LE CSS DE NOTRE SITE DE PROJET PRO */
+
+
+
+.toto {
+background-color: red;
+height: 100px;
+}
+
+.toto2 {
+background-color: green;
+height: 100px;
+>>>>>>> 7cbea02c907f711ac7be7d5f2256f76ba4b0bf16
 }
