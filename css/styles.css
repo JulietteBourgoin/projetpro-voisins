@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-
 /* REGLES GENERALES */
-
-.case{
-    text-align: justify;
-}
-
-
 /* -------------------------------------------- */
 /* -------------------------------------------- */
 /* -------------------------------------------- */
@@ -69,8 +61,6 @@ background-position: right 165% bottom;
 	display:flex;
 	align-items:center;
 	justify-content:center;
-
-
 }
 
 
@@ -78,7 +68,6 @@ background-position: right 165% bottom;
 	display:flex;
 	align-items:center;
 	justify-content:center;
-
 }
 
 
@@ -168,10 +157,6 @@ h1 {
 }
 
 
-/* Titre ------------ a supprimer surement */
-.titre{
-    margin-top: 30px;
-}
 
 
 /* Media Query */
@@ -183,4 +168,3 @@ h1 {
         align-items: center;
     }
 }
-
