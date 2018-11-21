@@ -22,6 +22,12 @@ margin-top: 10px;
 /* -------------------------------------------- */
 /* -------------------------------------------- */
 
+/* CSS générales */
+.container-marges{
+    margin-top:50px;
+}
+
+
 /* CSS ECRAN 01 - ACCROCHE - TITRE DU PROJET + VISUEL APPLICATION */
 
 .ecran01 {
@@ -88,6 +94,15 @@ h1 {
 
 .etapes{
     margin-top:30px;
+}
+
+.img_etapes{
+    display: flex;
+    justify-content: center;
+}
+
+.img-etapes-height{
+    height: 400px;
 }
 
 
