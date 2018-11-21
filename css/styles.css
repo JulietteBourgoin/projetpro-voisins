@@ -7,8 +7,8 @@
 
 
 .navbar-default {
-	background-color: transparent;
-	border-color: transparent;
+background-color: transparent;
+border-color: transparent;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
