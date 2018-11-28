@@ -5,7 +5,6 @@
 
 /* CSS HEADER */
 
-
 .navbar-default {
 background-color: transparent;
 border-color: transparent;
@@ -33,6 +32,7 @@ margin-top: 10px;
 .ecran01 {
 background-image: linear-gradient(to right top, #73ced6, #55dcc4, #70e59a, #abe762, #f2df20);
 background-image: linear-gradient(to right top, #e800ff, #ff00a6, #ff4d56, #ffa001, #ebd812);
+background-image: url("../images/boite.jpg");
 height: 100vh;
 }
 
