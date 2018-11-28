@@ -113,22 +113,34 @@ h1 {
 /* CSS ECRAN 03 - PARTIE MEMBRES */
 
 .membres{
-    margin-top: 30px;
+    position: relative;
+    height: 300px;
+    margin-bottom: 10px;
 }
 
 .img_membres{
-
+    position: absolute;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
 }
 
 .arrondi{
-    border-radius: 5%;
-    width: 400px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
-.membres:hover{
-    background-color: black 0.2%;
+.img_boites{
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+}
+
+.img_membres:hover{
+    opacity: 1;
+    transition: all 0.5s ease-out;
 }
 
 
@@ -138,16 +150,14 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: calc(100% - 30px);
+    width: 100%;
     height: 100%;
-    margin-left: 15px;
-    margin-right: 15px;
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity 0.20s linear;
+    transition: opacity 0.50s linear;
     color: #FFF;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.2);
     font-size: 1.3rem;
     font-weight: 600;
     border-radius: 5%;
