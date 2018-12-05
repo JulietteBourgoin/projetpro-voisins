@@ -5,7 +5,7 @@
 
 /* CSS HEADER */
 
-.navbar-default {
+/*.navbar-default {
 background-color: transparent;
 border-color: transparent;
 }
@@ -15,6 +15,143 @@ background-color: transparent;
 color: white;
 font-size: 1.5em;
 margin-top: 10px;
+}*/
+
+/* ------ MENU ------ */
+header{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+}
+
+#main-nav {
+	position:fixed;
+	right:0;
+	top:0;
+	z-index:1;
+	width:250px;
+	height:100vh;
+	background-color: White;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.8);
+	/* On décale le menu de 300px sur la gauche pour pas que l'élément ni l'ombre ne soit a l'écran */
+	transform:translateX(100%);
+	transition:transform 0.4s ease-in-out;
+}
+
+#main-nav.open {
+	transform:translateX(0%);
+}
+
+#main-nav h1{
+	text-align:center;
+	color:rgba(77, 99, 255, 1);
+}
+
+#main-nav  ul {
+	list-style-type:none; /*Enlever les puces */
+	margin:0;
+	padding:0;
+	width:100%;
+	text-align:center;
+}
+
+#main-nav ul li{
+	display:block;
+	width:90%;
+	margin:0 auto;
+	padding:0;
+    padding-bottom: 20px;
+}
+
+#main-nav a{
+	display:block;
+	height:100%;
+	width:100%;
+	background-color:transparent;
+	color:black;
+	text-decoration:none;
+	transition:background-color 0.25s ease-out, color 0.25s ease-out;
+    font-size: 1.8rem;
+    padding-top: 30px;
+}
+
+#main-nav a:hover{
+	color: rgba(77, 99, 255, 1);
+}
+
+.buttons{
+	background-color:transparent;
+	border:none;
+	padding:5px;
+	margin:0;
+	cursor:pointer; /* Affiche le pointeur */
+}
+
+h5{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgba(77, 99, 255, 1);
+    margin-top: 30px;
+}
+
+/* --- Boutons menu --- */
+#close-btn{
+	color:rgba(77, 99, 255, 1);
+	font-size: 3rem;
+	position:absolute;
+	right:30px;
+	top:13px;
+}
+
+#open-btn{
+	color:#000;
+	font-size: 5pt;
+	position:fixed;
+	top:15px;
+	right:5%;
+}
+
+#open-btn {
+    display:block !important;
+}
+
+/* ------ MENU PC ------ */
+#main-nav2 {
+	position:fixed;
+	right:20px;
+	top:20px;
+	z-index:1;
+}
+
+#main-nav2  ul {
+	list-style-type:none; /*Enlever les puces */
+	margin:0;
+	padding:0;
+	width:100%;
+	text-align:center;
+}
+
+#main-nav2 ul li{
+	display:inline-block;
+	margin:0 auto;
+	padding:0;
+    margin-right: 40px;
+}
+
+#main-nav2 a{
+	display:block;
+	height:100%;
+	width:100%;
+	background-color:transparent;
+	color:black;
+	text-decoration:none;
+    font-size: 1.8rem;
+}
+
+#main-nav2 a:hover{
+	color: rgba(77, 99, 255, 1);
 }
 
 /* -------------------------------------------- */
@@ -201,6 +338,25 @@ h1 {
 }
 
 
+/* ----- Titres ----- */
+h2{
+    padding-top: 
+        3rem; /* Important pour le scroll du menu, si on l'enlève le titre se retrouve touuuuuut en haut collé */
+}
+
+
+/* ----- Bouton scroll to top ----- */
+#btn-scroll-top{
+    position: fixed;
+    bottom: 20px;
+    right: 3vw;
+    opacity: 0.5;
+}
+
+#btn-scroll-top:hover{
+    opacity: 1;
+}
+
 /* -------------------------------------------- */
 /* -------------------------------------------- */
 /* -------------------------------------------- */
@@ -214,5 +370,16 @@ h1 {
         margin-top:30px;
         display: flex;
         align-items: center;
+    }
+}
+@media(min-width:768px){
+    #menu_hamburger{
+        display: none;
+    }
+}
+
+@media(max-width:769px){
+    #menu_pc{
+        display:none;
     }
 }
