@@ -41,44 +41,35 @@
   <body> 
         <!-- HEADER - MENU SIMPLE - HORIZONTAL -->
 
-        <header id="main_menu" class="header">
-            <div class="main_menu_bg navbar-fixed-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="nave_menu wow fadeInUp" data-wow-duration="1s">
-                            <nav class="navbar navbar-default" id="navmenu">
-                                <div class="container-fluid">
+        <header class="header">
+            <div class="container">
+                <div class="row" id="menu_hamburger">
+                    
+                <nav id="main-nav">
+                    <h5>MENU</h5>
+                    <button type="button" class="buttons" id="close-btn">&times;</button>
+                    <ul>
+                        <li><a href="#concept" class="js-scrollTo fermer">Concept</a></li>
+                        <li><a href="#carte" class="js-scrollTo fermer">Carte</a></li>
+                        <li><a href="#communaute" class="js-scrollTo fermer">Communauté</a></li>
+                    </ul>
+                </nav>
 
-                                    <!-- BOUTON HAMBURGER - Brand and toggle get grouped for better mobile display -->
-                                    <div class="navbar-header">
-                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-
-                                    <!-- IMAGE - LOGO -->
-                                        <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt=""/></a>
-
-                                    </div>
-
-                                    <!-- MENU - LIENS -->
-                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-                                        <ul class="nav navbar-nav navbar-right">
-                                            <li class="active"><a href="#home">Home</a></li>
-                                            <li class="active"><a href="#home">Concept</a></li>
-                                            <li class="active"><a href="#home">Quartier</a></li>
-                                            <li class="active"><a href="#home">Communauté</a></li>
-                                        </ul>
-
-                                    </div>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
+                <button type="button" class="buttons" id="open-btn"><img src="images/menu-icon.png" alt="Bouton menu hamburger" height="25px"></button>
+                    
                 </div>
+                
+                
+                <div class="row" id="menu_pc">
+                    <nav id="main-nav2">
+                        <ul>
+                            <li><a href="#concept" class="js-scrollTo fermer">Concept</a></li>
+                            <li><a href="#carte" class="js-scrollTo fermer">Carte</a></li>
+                            <li><a href="#communaute" class="js-scrollTo fermer">Communauté</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
             </div>
         </header>
 
@@ -117,7 +108,7 @@
         <!-- Présentation étapes -->  
         <div class="container container-marges">
             <div class="row text_center">
-                <h2>Etapes</h2>
+                <h2 id="concept">Concept</h2>
             </div>
             <div class="row etapes">
                 <div class="col-lg-offset-2 col-lg-4 col-md-offset-1 col-md-5 col-sm-6 col-xs-12">
@@ -174,8 +165,12 @@
         <!-- Carte -->
    
             <div class="row">
+                <div>
+                    <h2 class="text_center" id="carte">
+                        Carte 
+                    </h2>
+                </div>
                 <div class="col map">
-                   <!-- <h2 class="text_center">Carte</h2>-->
                   <iframe src="https://www.google.com/maps/d/embed?mid=1cnfd8xMasUBRCI4QS8hRXqFM4UsIQL5n&hl=fr" width="640" height="480"></iframe>
                 </div>
             </div>
@@ -190,14 +185,14 @@
         <div class="container container-marges">
             <div class="row">
                 <div>
-                    <h2 class="text_center">
-                        Nos habitants 
+                    <h2 class="text_center" id="communaute">
+                        Communauté 
                     </h2>
                 </div>
             </div>
 
             <div class="row">
-                <div class="membres col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                <div class="membres col-lg-2 col-md-2 col-sm-3 col-xs-4">
                     <div class="img_membres">
                         <img src="images/ex01.png" class="img-responsive arrondi" />
                         <div class="hover_content">
@@ -335,7 +330,13 @@
 
     </main>  
 
-
+    <!-- Bouton scroll top -->        
+        <div class="div-scroll-top">
+            <a href="#" id="btn-scroll-top">
+                <img src="images/to_top.png">
+            </a>
+        </div>
+      
      <!-- FOOTER -->
       
     <footer> 
@@ -349,6 +350,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+      
       
   </body>
 
