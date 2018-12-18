@@ -118,6 +118,16 @@ h5{
 }
 
 /* ------ MENU PC ------ */
+#fond-menu{
+    background-color: white;
+    width:50vw;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
 #main-nav2 {
 	position:fixed;
 	right:20px;
