@@ -17,10 +17,10 @@ font-size: 1.5em;
 margin-top: 10px;
 }*/
 
-/* ------ MENU ------ */
+/* ------ MENU MOBILE ------ */
 header{
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     top: 0;
 }
 
@@ -147,6 +147,7 @@ h5{
 	background-color:transparent;
 	color:black;
 	text-decoration:none;
+    font-weight: 600;
     font-size: 1.8rem;
 }
 
@@ -175,10 +176,10 @@ height: 100vh;
 
 .fondimage{
 animation: fadeInUp 2.5s linear;
-background-image: url("../images/mockup-ecran01-bis.png");
+background-image: url("../images/mockup-ecrans.png");
 background-repeat: no-repeat;
 height: 100vh;
-background-position: right 165% bottom;
+background-position: left 20% bottom;
 }
 
 
@@ -202,10 +203,7 @@ background-position: right 165% bottom;
 }
 
 
-h1 {
-	font-size: 5em;
-	color: white;
-}
+
 
 
 /* KEYFRAMES ANIMATIONS */
@@ -219,6 +217,59 @@ h1 {
 /* -------------------------------------------- */
 /* -------------------------------------------- */
 /* -------------------------------------------- */
+
+/* ECRAN 1 */
+#voisilien-titre{
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+h1 {
+	font-size: 5em;
+	color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+#presentation-voisilien{
+    display: flex;
+    height: 100vh;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img_membres2{
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+}
+
+.cover{
+    object-fit: cover;
+    width: 32.6vw;
+    height: 33.32vh;
+}
+
+.img_boites2{
+    z-index: 1;
+}
+
+.img_membres2:hover{
+    opacity: 1;
+    transition: all 0.5s ease-out;
+}
+
+
+
+
 
 /* CSS ECRAN 02 - PARTIE ETAPES  */
 
@@ -285,7 +336,7 @@ h1 {
 .hover_content {
     position: absolute;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     width: 100%;
     height: 100%;
@@ -295,7 +346,7 @@ h1 {
     transition: opacity 0.50s linear;
     color: #FFF;
     background-color: rgba(0,0,0,0.2);
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: 600;
     border-radius: 5%;
 }
@@ -381,5 +432,13 @@ h2{
 @media(max-width:769px){
     #menu_pc{
         display:none;
+    }
+    .cover{
+    object-fit: cover;
+    width: 48vw;
+    height: 25vh;
+}
+    #masquer{
+        display: none;
     }
 }
